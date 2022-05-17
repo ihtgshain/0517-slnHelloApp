@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="prjHelloApp.MainPage"> 
+    <StackLayout Spacing="0"> <!--show image-->
+        <Frame BackgroundColor="DarkGray" Padding="5,5">
+            <Image Source="old.jpg"/>
+        </Frame>
+        <!--show colorful labels horizontally-->
+        <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="Center">
+            <Label x:Name="l1" Text="Red" BackgroundColor="Red" WidthRequest="300" HeightRequest="150" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Label x:Name="l2" Text="Orange" BackgroundColor="Orange" WidthRequest="300" HeightRequest="150" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Label x:Name="l3" Text="Yellow" BackgroundColor="Yellow" WidthRequest="300" HeightRequest="150" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Label x:Name="l4" Text="Green" BackgroundColor="Green" WidthRequest="300" HeightRequest="150" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <!--show labels vertically-->
+        <StackLayout  Spacing="0">  <!--default:Orientation = vertical-->
+            <Label Text="1st Line" HeightRequest="50" BackgroundColor="LightGray" VerticalTextAlignment="Center" Padding="10"/>
+            <Label Text="2nd Line" HeightRequest="50" BackgroundColor="LightGray" VerticalTextAlignment="Center" Padding="10"/>
+            <Label Text="3rd Line" HeightRequest="50" BackgroundColor="LightGray" VerticalTextAlignment="Center" Padding="10"/>
+            <Label Text="4th Line" HeightRequest="50" BackgroundColor="LightGray" VerticalTextAlignment="Center" Padding="10"/>
+            <Frame Padding="5,5" BackgroundColor="LightSkyBlue">
+                <Button Text="Change Color(no repeat)" Clicked="ChangeColor" BackgroundColor="Gray"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Frame Padding="5,5" BackgroundColor="LightYellow">
+                        <Button Text="Lettory" Clicked="lettoryNumber" BackgroundColor="Gray"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Frame Padding="5,5" BackgroundColor="LightYellow">
+                        <Button Text="Bubble Sort" Clicked="sortB" BackgroundColor="Gray"/>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="stackLettory" HorizontalOptions="Center" Spacing="30"/>
+        </StackLayout>  
+    </StackLayout>      
+</ContentPage>
