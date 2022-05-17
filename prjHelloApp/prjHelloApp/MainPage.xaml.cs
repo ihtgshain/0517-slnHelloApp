@@ -43,6 +43,30 @@ namespace prjHelloApp
             l3.BackgroundColor = colorNum(list[2]);
             l4.BackgroundColor = colorNum(list[3]);
         }
+
+        public string wordNum(int n)
+        {
+            if (n == 0)
+                return "Red";
+            else if (n == 1)
+                return "Orange";
+            else if (n == 2)
+                return "Yellow";
+            else 
+                return "Green";
+            
+        }
+        public void ChangeWord(object sender, EventArgs e)
+        {
+            var list = Enumerable.Range(0, 4).OrderBy(c => rd.Next()).ToList();
+            l1.Text = wordNum(list[0]);
+            l2.Text = wordNum(list[1]);
+            l3.Text = wordNum(list[2]);
+            l4.Text = wordNum(list[3]);
+        }
+        
+
+
         List<Label> listLb = new List<Label>();
         List<int> set = new List<int>();
         public void lettoryNumber(object sender, EventArgs e)

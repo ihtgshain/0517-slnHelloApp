@@ -22,6 +22,9 @@
             <Frame Padding="5,5" BackgroundColor="LightSkyBlue">
                 <Button Text="Change Color(no repeat)" Clicked="ChangeColor" BackgroundColor="Gray"/>
             </Frame>
+            <Frame Padding="5,5" BackgroundColor="LightSkyBlue">
+                <Button Text="Change Word(no repeat)" Clicked="ChangeWord" BackgroundColor="Gray"/>
+            </Frame>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout HorizontalOptions="FillAndExpand">
                     <Frame Padding="5,5" BackgroundColor="LightYellow">
