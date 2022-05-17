@@ -25,19 +25,13 @@ namespace prjHelloApp
                 return Color.Orange;
             else if (n == 2)
                 return Color.Yellow;
-            else if (n == 3)
-                return Color.Green;
-            else if (n == 4)
-                return Color.Blue;
-            else if (n == 5)
-                return Color.LightBlue;
             else
-                return Color.Purple;
+                return Color.Green;
         }
 
         public void ChangeColor(object sender, EventArgs e)
         {
-            var list = Enumerable.Range(0,6).OrderBy(c=>rd.Next()).ToList();
+            var list = Enumerable.Range(0,4).OrderBy(c=>rd.Next()).ToList();
             l1.BackgroundColor = colorNum(list[0]);
             l2.BackgroundColor = colorNum(list[1]);
             l3.BackgroundColor = colorNum(list[2]);
@@ -52,21 +46,35 @@ namespace prjHelloApp
                 return "Orange";
             else if (n == 2)
                 return "Yellow";
-            else 
+            else
                 return "Green";
-            
         }
         public void ChangeWord(object sender, EventArgs e)
         {
             var list = Enumerable.Range(0, 4).OrderBy(c => rd.Next()).ToList();
+            for(int i =0;i<list.Count;i++)
+            {
+                if (list[i] == i)
+                {
+                    int temp = list[i];
+                    if (i != list.Count - 1)
+                    {
+                        list[i] = list[i + 1];
+                        list[i + 1] = temp;
+                    }
+                    else
+                    {
+                        list[i] = list[0];
+                        list[0] = temp;
+                    }
+                }
+            }
             l1.Text = wordNum(list[0]);
             l2.Text = wordNum(list[1]);
             l3.Text = wordNum(list[2]);
             l4.Text = wordNum(list[3]);
         }
         
-
-
         List<Label> listLb = new List<Label>();
         List<int> set = new List<int>();
         public void lettoryNumber(object sender, EventArgs e)
