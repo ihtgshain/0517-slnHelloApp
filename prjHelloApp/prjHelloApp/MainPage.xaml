@@ -19,9 +19,9 @@
             <Label Text="2nd Line" HeightRequest="50" BackgroundColor="LightGray" VerticalTextAlignment="Center" Padding="10"/>
             <Label Text="3rd Line" HeightRequest="50" BackgroundColor="LightGray" VerticalTextAlignment="Center" Padding="10"/>
             <Label Text="4th Line" HeightRequest="50" BackgroundColor="LightGray" VerticalTextAlignment="Center" Padding="10"/>
-            <Frame Padding="5,5" BackgroundColor="LightSkyBlue">
+            <!--<Frame Padding="5,5" BackgroundColor="LightSkyBlue">
                 <Button Text="Change Color(no repeat)" Clicked="ChangeColor" BackgroundColor="Gray"/>
-            </Frame>
+            </Frame>-->
             <Frame Padding="5,5" BackgroundColor="LightSkyBlue">
                 <Button Text="Change Word(no repeat)" Clicked="ChangeWord" BackgroundColor="Gray"/>
             </Frame>

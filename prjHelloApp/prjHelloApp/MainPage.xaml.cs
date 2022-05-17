@@ -17,26 +17,26 @@ namespace prjHelloApp
             
         }
         Random rd = new Random();
-        public Color colorNum(int n)
-        {
-            if (n == 0)
-                return Color.Red;
-            else if (n == 1)
-                return Color.Orange;
-            else if (n == 2)
-                return Color.Yellow;
-            else
-                return Color.Green;
-        }
+        //public Color colorNum(int n)
+        //{
+        //    if (n == 0)
+        //        return Color.Red;
+        //    else if (n == 1)
+        //        return Color.Orange;
+        //    else if (n == 2)
+        //        return Color.Yellow;
+        //    else
+        //        return Color.Green;
+        //}
 
-        public void ChangeColor(object sender, EventArgs e)
-        {
-            var list = Enumerable.Range(0,4).OrderBy(c=>rd.Next()).ToList();
-            l1.BackgroundColor = colorNum(list[0]);
-            l2.BackgroundColor = colorNum(list[1]);
-            l3.BackgroundColor = colorNum(list[2]);
-            l4.BackgroundColor = colorNum(list[3]);
-        }
+        //public void ChangeColor(object sender, EventArgs e)
+        //{
+        //    var list = Enumerable.Range(0,4).OrderBy(c=>rd.Next()).ToList();
+        //    l1.BackgroundColor = colorNum(list[0]);
+        //    l2.BackgroundColor = colorNum(list[1]);
+        //    l3.BackgroundColor = colorNum(list[2]);
+        //    l4.BackgroundColor = colorNum(list[3]);
+        //}
 
         public string wordNum(int n)
         {
